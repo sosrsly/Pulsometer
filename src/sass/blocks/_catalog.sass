@@ -1,0 +1,81 @@
+.catalog
+    padding-bottom: 100px
+    &__tabs
+        display: flex
+        justify-content: center
+        align-items: center
+        list-style-type: none
+        margin-bottom: 0
+        padding-left: 0
+    &__tab
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        color: #6b6b6b
+        font-size: 18px
+        font-weight: 500
+        text-transform: uppercase
+        line-height: 48px
+        text-align: center
+        transform: skewX(-25deg)
+        cursor: pointer
+        margin: 0 5px
+        div
+           transform: skewX(25deg) 
+        &:hover
+            background-color: #c70101
+            color: white
+            border: none
+            box-shadow: 0px 5px 20px #c70101
+
+    &-item
+        width: 300px
+        min-height: 440px
+        border: 2px solid #e8e8e8
+        background-color: #ffffff
+        padding: 20px 20px 25px 20px
+        margin-top: 60px
+        &__img
+            display: block
+            margin: 0 auto
+            height: 200px
+            max-width: 100%
+        &__subtitle
+            color: #0d0d0d
+            font-size: 16px
+            font-weight: 700
+            text-align: center
+            margin-top: 20px
+        &__descr
+            color: #0d0d0d
+            font-size: 14px
+            font-weight: 500
+            text-align: center
+            margin-top: 16px
+        &__link
+            display: block
+            color: #c70101
+            font-size: 14px
+            font-weight: 700
+            text-decoration: underline
+            text-align: center
+            margin-top: 17px
+        hr
+            height: 1px
+            background-color: #e8e8e8
+            border-bottom: none
+            margin-top: 19px
+            margin-bottom: 20px
+        &__footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__old-price
+            color: #555555
+            font-size: 14px
+            font-weight: 300
+            text-decoration: line-through
+        &__price
+            color: #050505
+            font-size: 20px
+            font-weight: 700
