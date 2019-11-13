@@ -1,6 +1,12 @@
 @media (max-width: 1200px)
     .container
         width: 85%
+    .catalog
+        &__content
+            justify-content: center
+    .catalog-item
+        margin-right: 20px
+        margin-left: 20px
 
 @media (max-width: 991px)
     .container
@@ -88,6 +94,19 @@
         padding-top: 30px
         button
             display: none
+
+    .catalog
+        &__content
+            justify-content: center
+        &__tabs
+            margin-top: 30px
+        &__tab
+            width: 150px
+            height: 45px
+            font-size: 15px
+            line-height: 45px
+
+
 
 
     // .slick-dots
@@ -191,6 +210,8 @@
         min-height: 150px
         padding-top: 20px
         padding-bottom: 20px
+
+
 
 @media (max-width: 341px)
     .promo
