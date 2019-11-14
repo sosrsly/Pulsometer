@@ -85,6 +85,31 @@ $('.button_catalog').each(function(i){
   })
 });
 
+function validationForm (form){
+  $(form).validate({
+    rules: {
+      name: {
+        required: true
+      },
+      phone: {
+        required: true
+      },
+      email: {
+        required: true
+      }
+    },
+    messages: {
+      name: "*Пожалуйста, введите ваше имя",
+      email: "*Пожалуйста, введите ваш email",
+      phone: "*Пожалуйста, введите ваш номер телефона"
+    }
+  });
+};
+
+validationForm('#consultation .search-form');
+validationForm('#main-form');
+validationForm('#order .search-form');
+
 })(jQuery);
 
 
