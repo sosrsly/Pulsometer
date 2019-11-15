@@ -136,12 +136,12 @@ $(document).ready(function(){
           },
           messages: {
               name: {
-                  required: "Пожалуйста, введите свое имя",
+                  required: "*Пожалуйста, введите свое имя",
                   minlength: jQuery.validator.format("Введите {0} символа!")
                 },
-              phone: "Пожалуйста, введите свой номер телефона",
+              phone: "*Пожалуйста, введите свой номер телефона",
               email: {
-                required: "Пожалуйста, введите свою почту",
+                required: "*Пожалуйста, введите свою почту",
                 email: "Неправильно введен адрес почты"
               }
           }
@@ -185,5 +185,7 @@ $(document).ready(function(){
       $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
       return false;
   });
+
+  new WOW().init();
 });
   
