@@ -1,0 +1,26 @@
+
+<div class="social_block">
+    <div class="social-icon animation"><img src="Картинка" alt=""></div>
+    <div class="social-icon animation"><img src="Картинка" alt=""></div>
+    <div class="social-icon animation"><img src="Картинка" alt=""></div>
+</div>
+
+
+@keyframes icon_animation {
+    from {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+.animation {
+    animation: icon_animation 1.5s ease-in-out infinite;
+}
+.animation:hover {
+    animation-play-state: paused;
+}
